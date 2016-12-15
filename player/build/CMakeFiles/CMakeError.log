@@ -1,0 +1,566 @@
+Determining if files dns_sd.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_10c27/fast"
+/usr/bin/make -f CMakeFiles/cmTC_10c27.dir/build.make CMakeFiles/cmTC_10c27.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_10c27.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_10c27.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:20: fatal error: dns_sd.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_10c27.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_10c27.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_10c27.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_10c27/fast' failed
+make: *** [cmTC_10c27/fast] Error 2
+
+Source:
+/* */
+#include <dns_sd.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/filio.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9afe5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9afe5.dir/build.make CMakeFiles/cmTC_9afe5.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9afe5.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_9afe5.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:23: fatal error: sys/filio.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_9afe5.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_9afe5.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_9afe5.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9afe5/fast' failed
+make: *** [cmTC_9afe5/fast] Error 2
+
+Source:
+/* */
+#include <sys/filio.h>
+
+
+int main(void){return 0;}
+
+Determining if files ieeefp.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_64c65/fast"
+/usr/bin/make -f CMakeFiles/cmTC_64c65.dir/build.make CMakeFiles/cmTC_64c65.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_64c65.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_64c65.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:20: fatal error: ieeefp.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_64c65.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_64c65.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_64c65.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_64c65/fast' failed
+make: *** [cmTC_64c65/fast] Error 2
+
+Source:
+/* */
+#include <ieeefp.h>
+
+
+int main(void){return 0;}
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2026e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2026e.dir/build.make CMakeFiles/cmTC_2026e.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2026e.dir/TestEndianess.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_2026e.dir/TestEndianess.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTC_2026e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2026e.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall     CMakeFiles/cmTC_2026e.dir/TestEndianess.c.o  -o cmTC_2026e -rdynamic 
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if files phidget21.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8173c/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8173c.dir/build.make CMakeFiles/cmTC_8173c.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8173c.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_8173c.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:23: fatal error: phidget21.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_8173c.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_8173c.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_8173c.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_8173c/fast' failed
+make: *** [cmTC_8173c/fast] Error 2
+
+Source:
+/* */
+#include <phidget21.h>
+
+
+int main(void){return 0;}
+
+Determining if the include file canlib.h exists failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_857ff/fast"
+/usr/bin/make -f CMakeFiles/cmTC_857ff.dir/build.make CMakeFiles/cmTC_857ff.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_857ff.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_857ff.dir/CheckIncludeFile.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:20: fatal error: canlib.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_857ff.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_857ff.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_857ff.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_857ff/fast' failed
+make: *** [cmTC_857ff/fast] Error 2
+
+
+Determining if the include file SerialStream.h exists failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_77857/fast"
+/usr/bin/make -f CMakeFiles/cmTC_77857.dir/build.make CMakeFiles/cmTC_77857.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77857.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_77857.dir/CheckIncludeFile.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:26: fatal error: SerialStream.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_77857.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_77857.dir/CheckIncludeFile.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_77857.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_77857/fast' failed
+make: *** [cmTC_77857/fast] Error 2
+
+
+Determining if the function SerialStream exists in the serial failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c40da/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c40da.dir/build.make CMakeFiles/cmTC_c40da.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c40da.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -Wall -DCHECK_FUNCTION_EXISTS=SerialStream   -o CMakeFiles/cmTC_c40da.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c40da
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c40da.dir/link.txt --verbose=1
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=SerialStream    CMakeFiles/cmTC_c40da.dir/CheckFunctionExists.c.o  -o cmTC_c40da -rdynamic -lserial 
+/usr/bin/ld: cannot find -lserial
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c40da.dir/build.make:97: recipe for target 'cmTC_c40da' failed
+make[1]: *** [cmTC_c40da] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_c40da/fast' failed
+make: *** [cmTC_c40da/fast] Error 2
+
+
+Determining if the include file Device.h exists failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_4586f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_4586f.dir/build.make CMakeFiles/cmTC_4586f.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4586f.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -DLINUX -DUNIX -D__LINUX__  -Wall    -o CMakeFiles/cmTC_4586f.dir/CheckIncludeFile.cxx.o -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:20: fatal error: Device.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_4586f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_4586f.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_4586f.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_4586f/fast' failed
+make: *** [cmTC_4586f/fast] Error 2
+
+
+Determining if files alsa/asoundlib.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_20412/fast"
+/usr/bin/make -f CMakeFiles/cmTC_20412.dir/build.make CMakeFiles/cmTC_20412.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20412.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_20412.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:28: fatal error: alsa/asoundlib.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_20412.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_20412.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_20412.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_20412/fast' failed
+make: *** [cmTC_20412/fast] Error 2
+
+Source:
+/* */
+#include <alsa/asoundlib.h>
+
+
+int main(void){return 0;}
+
+Determining if files sys/types.h;linux/videodev.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_07b9f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_07b9f.dir/build.make CMakeFiles/cmTC_07b9f.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_07b9f.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_07b9f.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:3:28: fatal error: linux/videodev.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_07b9f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_07b9f.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_07b9f.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_07b9f/fast' failed
+make: *** [cmTC_07b9f/fast] Error 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <linux/videodev.h>
+
+
+int main(void){return 0;}
+
+Determining if files libptp2/ptp.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_378aa/fast"
+/usr/bin/make -f CMakeFiles/cmTC_378aa.dir/build.make CMakeFiles/cmTC_378aa.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_378aa.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_378aa.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:25: fatal error: libptp2/ptp.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_378aa.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_378aa.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_378aa.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_378aa/fast' failed
+make: *** [cmTC_378aa/fast] Error 2
+
+Source:
+/* */
+#include <libptp2/ptp.h>
+
+
+int main(void){return 0;}
+
+Determining if files yarp/os/all.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_99d1f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_99d1f.dir/build.make CMakeFiles/cmTC_99d1f.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_99d1f.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_99d1f.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:25: fatal error: yarp/os/all.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_99d1f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_99d1f.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_99d1f.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_99d1f/fast' failed
+make: *** [cmTC_99d1f/fast] Error 2
+
+Source:
+/* */
+#include <yarp/os/all.h>
+
+
+int main(void){return 0;}
+
+Determining if files yarp/sig/all.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_9d391/fast"
+/usr/bin/make -f CMakeFiles/cmTC_9d391.dir/build.make CMakeFiles/cmTC_9d391.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9d391.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_9d391.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:26: fatal error: yarp/sig/all.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_9d391.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_9d391.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_9d391.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_9d391/fast' failed
+make: *** [cmTC_9d391/fast] Error 2
+
+Source:
+/* */
+#include <yarp/sig/all.h>
+
+
+int main(void){return 0;}
+
+Determining if files usb.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2664f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2664f.dir/build.make CMakeFiles/cmTC_2664f.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2664f.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_2664f.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:17: fatal error: usb.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_2664f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2664f.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_2664f.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2664f/fast' failed
+make: *** [cmTC_2664f/fast] Error 2
+
+Source:
+/* */
+#include <usb.h>
+
+
+int main(void){return 0;}
+
+Determining if the function main exists in the roboop failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_224ab/fast"
+/usr/bin/make -f CMakeFiles/cmTC_224ab.dir/build.make CMakeFiles/cmTC_224ab.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_224ab.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -Wall -DCHECK_FUNCTION_EXISTS=main   -o CMakeFiles/cmTC_224ab.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:12:5: error: conflicting types for ‘main’
+ int main(int ac, char*av[]){
+     ^
+<command-line>:0:23: note: previous declaration of ‘main’ was here
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:6:6: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+ char CHECK_FUNCTION_EXISTS();
+      ^
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c: In function ‘main’:
+<command-line>:0:23: error: too few arguments to function ‘main’
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:14:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS();
+   ^
+/usr/share/cmake-3.5/Modules/CheckFunctionExists.c:12:5: note: declared here
+ int main(int ac, char*av[]){
+     ^
+CMakeFiles/cmTC_224ab.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_224ab.dir/CheckFunctionExists.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_224ab.dir/CheckFunctionExists.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_224ab/fast' failed
+make: *** [cmTC_224ab/fast] Error 2
+
+
+Determining if files robotinocom.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_3b03e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3b03e.dir/build.make CMakeFiles/cmTC_3b03e.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3b03e.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_3b03e.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:25: fatal error: robotinocom.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_3b03e.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_3b03e.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_3b03e.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_3b03e/fast' failed
+make: *** [cmTC_3b03e/fast] Error 2
+
+Source:
+/* */
+#include <robotinocom.h>
+
+
+int main(void){return 0;}
+
+Determining if files xtimer.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_94b10/fast"
+/usr/bin/make -f CMakeFiles/cmTC_94b10.dir/build.make CMakeFiles/cmTC_94b10.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_94b10.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_94b10.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:20: fatal error: xtimer.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_94b10.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_94b10.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_94b10.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_94b10/fast' failed
+make: *** [cmTC_94b10/fast] Error 2
+
+Source:
+/* */
+#include <xtimer.h>
+
+
+int main(void){return 0;}
+
+Determining if files xthread.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_bcd2a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bcd2a.dir/build.make CMakeFiles/cmTC_bcd2a.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bcd2a.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_bcd2a.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:21: fatal error: xthread.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_bcd2a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_bcd2a.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_bcd2a.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bcd2a/fast' failed
+make: *** [cmTC_bcd2a/fast] Error 2
+
+Source:
+/* */
+#include <xthread.h>
+
+
+int main(void){return 0;}
+
+Determining if files libusbSR.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2146a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2146a.dir/build.make CMakeFiles/cmTC_2146a.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2146a.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_2146a.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:22: fatal error: libusbSR.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_2146a.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2146a.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_2146a.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2146a/fast' failed
+make: *** [cmTC_2146a/fast] Error 2
+
+Source:
+/* */
+#include <libusbSR.h>
+
+
+int main(void){return 0;}
+
+Determining if the include file libMesaSR.h exists failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_63ca7/fast"
+/usr/bin/make -f CMakeFiles/cmTC_63ca7.dir/build.make CMakeFiles/cmTC_63ca7.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_63ca7.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -Wall    -o CMakeFiles/cmTC_63ca7.dir/CheckIncludeFile.cxx.o -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:23: fatal error: libMesaSR.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_63ca7.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_63ca7.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_63ca7.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_63ca7/fast' failed
+make: *** [cmTC_63ca7/fast] Error 2
+
+
+Determining if files isense/isense.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_45ca8/fast"
+/usr/bin/make -f CMakeFiles/cmTC_45ca8.dir/build.make CMakeFiles/cmTC_45ca8.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_45ca8.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_45ca8.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:27: fatal error: isense/isense.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_45ca8.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_45ca8.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_45ca8.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_45ca8/fast' failed
+make: *** [cmTC_45ca8/fast] Error 2
+
+Source:
+/* */
+#include <isense/isense.h>
+
+
+int main(void){return 0;}
+
+Determining if files sphinx2/ckd_alloc.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7d1f5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7d1f5.dir/build.make CMakeFiles/cmTC_7d1f5.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7d1f5.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_7d1f5.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:31: fatal error: sphinx2/ckd_alloc.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_7d1f5.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_7d1f5.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_7d1f5.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7d1f5/fast' failed
+make: *** [cmTC_7d1f5/fast] Error 2
+
+Source:
+/* */
+#include <sphinx2/ckd_alloc.h>
+
+
+int main(void){return 0;}
+
+Determining if the include file SVS/svsclass.h exists failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_29a4f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_29a4f.dir/build.make CMakeFiles/cmTC_29a4f.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_29a4f.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++     -Wall    -o CMakeFiles/cmTC_29a4f.dir/CheckIncludeFile.cxx.o -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:26: fatal error: SVS/svsclass.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_29a4f.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_29a4f.dir/CheckIncludeFile.cxx.o' failed
+make[1]: *** [CMakeFiles/cmTC_29a4f.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_29a4f/fast' failed
+make: *** [cmTC_29a4f/fast] Error 2
+
+
+Determining if files libparticle.h exist failed with the following output:
+Change Dir: /home/wilson/ps/player/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_090a0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_090a0.dir/build.make CMakeFiles/cmTC_090a0.dir/build
+make[1]: Entering directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_090a0.dir/CheckIncludeFiles.c.o
+/usr/bin/cc    -Wall    -o CMakeFiles/cmTC_090a0.dir/CheckIncludeFiles.c.o   -c /home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/wilson/ps/player/build/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:25: fatal error: libparticle.h: No such file or directory
+compilation terminated.
+CMakeFiles/cmTC_090a0.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_090a0.dir/CheckIncludeFiles.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_090a0.dir/CheckIncludeFiles.c.o] Error 1
+make[1]: Leaving directory '/home/wilson/ps/player/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_090a0/fast' failed
+make: *** [cmTC_090a0/fast] Error 2
+
+Source:
+/* */
+#include <libparticle.h>
+
+
+int main(void){return 0;}
+

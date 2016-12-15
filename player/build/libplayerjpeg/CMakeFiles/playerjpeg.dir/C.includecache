@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wilson/ps/player/libplayerjpeg/playerjpeg.c
+config.h
+/home/wilson/ps/player/libplayerjpeg/config.h
+assert.h
+-
+stdio.h
+-
+string.h
+-
+jpeglib.h
+-
+jerror.h
+-
+setjmp.h
+-
+
+config.h
+
